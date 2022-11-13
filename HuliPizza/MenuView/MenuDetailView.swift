@@ -58,10 +58,6 @@ struct MenuDetailView: View {
                         .cornerRadius(30)
                 }
                 .padding()
-//                .alert(isPresented: $didOrder){
-//                    Alert(title: Text("Pizza Order"), message: Text("You ordered a " + self.menuItem.name))
-//                }
-                
                 .sheet(isPresented: $didOrder){
                     ConfirmView(menuID: self.menuItem.id, size:self.$settings.size, isPresented: self.$didOrder, orderModel: self.orderModel, quantity: self.$quantity)
                 }
