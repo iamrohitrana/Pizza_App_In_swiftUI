@@ -45,6 +45,10 @@ struct MenuDetailView: View {
                 Text("Order total: " + orderModel.formattedTotal)
                     .font(.headline)
             }
+            
+            
+            
+            
             .padding()
             HStack{
                 Spacer()
